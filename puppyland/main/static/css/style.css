@@ -47,6 +47,7 @@ div.fluid_container{
 .display-4{
     display: flex;
     justify-content: center;
+    font-weight: 999
 }
 p{
     display: flex;
@@ -64,6 +65,7 @@ p{
     font-family: Segoe Script !important;
     background-color:white;
     color: black;
+    justify-content: center;
 }
 .navbar-nav .nav-link{
     color: black !important;
@@ -73,4 +75,12 @@ svg{
 }
 i{
     color: #fe2712 !important;
+}
+.container{
+    display:flex;
+    justify-content: center;
+}
+#para{
+    display:flex;
+    justify-content: center;
 }
