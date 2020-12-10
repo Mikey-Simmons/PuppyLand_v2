@@ -1,0 +1,76 @@
+a.navbar-brand{
+    font-family: Segoe Script;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: red !important;
+    font-weight: 999;
+}
+a.navlink{
+    font-family: Segoe Script !important; 
+    color: black !important
+}
+a:hover{
+    transform: skew(-5deg);
+    color: red !important
+}
+.nav-link{
+    font-family: Segoe Script !important;
+    font-size: xxx-large;
+    display: block;
+    font-weight: 999;
+}
+body{
+    background-color: white;
+}
+.navbar{
+    display: block;
+    color: black;
+    background-color: white !important;
+}
+.navbar .navbar-nav {
+    float: none;
+    background-color:white!important
+    
+  }
+  
+  .navbar .navbar-collapse {
+    text-align: center;
+    justify-content: center;
+  }
+div.fluid_container{
+    display: flex;
+    justify-content: center;
+    background-color:white;
+}
+.display-4{
+    display: flex;
+    justify-content: center;
+}
+p{
+    display: flex;
+    justify-content: center;
+    font-size: xxx-large;
+}
+.btn-primary{
+    display: block;
+    justify-content: center;
+}
+.carousel-inner{
+    justify-content: center;
+}
+.jumbotron{
+    font-family: Segoe Script !important;
+    background-color:white;
+    color: black;
+}
+.navbar-nav .nav-link{
+    color: black !important;
+}
+svg{
+    color: #fe2712!important;
+}
+i{
+    color: #fe2712 !important;
+}
