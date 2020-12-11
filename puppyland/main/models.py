@@ -16,6 +16,8 @@ class Dog(models.Model):
     dog_breed = models.CharField(max_length=255)
     dog_gender = models.CharField(default = 000, max_length = 20)
     dog_weight = models.IntegerField()
+    dog_age=models.IntegerField()
+    img = models.FileField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     objects= DogManager()

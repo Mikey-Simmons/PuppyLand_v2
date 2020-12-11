@@ -3,7 +3,7 @@ a.navbar-brand{
     font-size: 100px;
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: whitesmoke;
     color: red !important;
     font-weight: 999;
 }
@@ -13,7 +13,7 @@ a.navlink{
 }
 a:hover{
     transform: skew(-5deg);
-    color: red !important
+    
 }
 .nav-link{
     font-family: Segoe Script !important;
@@ -22,16 +22,16 @@ a:hover{
     font-weight: 999;
 }
 body{
-    background-color: white;
+    background-color: whitesmoke;
 }
 .navbar{
     display: block;
     color: black;
-    background-color: white !important;
+    background-color: whitesmoke !important;
 }
 .navbar .navbar-nav {
     float: none;
-    background-color:white!important
+    background-color:whitesmoke!important
     
   }
   
@@ -42,7 +42,7 @@ body{
 div.fluid_container{
     display: flex;
     justify-content: center;
-    background-color:white;
+    background-color:whitesmoke;
 }
 .display-4{
     display: flex;
@@ -53,6 +53,7 @@ p{
     display: flex;
     justify-content: center;
     font-size: xxx-large;
+   
 }
 .btn-primary{
     display: block;
@@ -63,7 +64,7 @@ p{
 }
 .jumbotron{
     font-family: Segoe Script !important;
-    background-color:white;
+    background-color:whitesmoke;
     color: black;
     justify-content: center;
 }
@@ -82,5 +83,28 @@ i{
 }
 #para{
     display:flex;
+    justify-content: center;
+}
+.footer{
+    display:flex;
+    justify-content: center;
+    font-size: x-large;
+    font-family: Segoe Script !important;
+}
+.btn-group-lg>.btn, .btn-lg{
+    width: 100px;
+    display: flex !important;
+    justify-content: center !important;
+}
+.buttons{
+    display: flex;
+    justify-content: center !important;
+}
+form{
+    width: 500px !important;
+    justify-content: center;
+}
+.dog-form{
+    display: flex;
     justify-content: center;
 }
