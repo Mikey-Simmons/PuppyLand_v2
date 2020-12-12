@@ -3,35 +3,44 @@ a.navbar-brand{
     font-size: 100px;
     display: flex;
     justify-content: center;
-    background-color: whitesmoke;
-    color: red !important;
+    color: #DB4437!important;
     font-weight: 999;
+    background-color: #231f20
+    
+    
 }
+  
+
 a.navlink{
     font-family: Segoe Script !important; 
-    color: black !important
+    color: blue !important
 }
 a:hover{
     transform: skew(-5deg);
     
+}
+nav{
+    justify-content: center;
+    display: flex;
 }
 .nav-link{
     font-family: Segoe Script !important;
     font-size: xxx-large;
     display: block;
     font-weight: 999;
+    color: blue !important;
 }
 body{
-    background-color: whitesmoke;
+    background-color: #d2d2d2;
 }
 .navbar{
     display: block;
-    color: black;
-    background-color: whitesmoke !important;
+    color: blue !important;
+    background-color: #d2d2d2 !important;
 }
 .navbar .navbar-nav {
     float: none;
-    background-color:whitesmoke!important
+    background-color:#d2d2d2!important
     
   }
   
@@ -42,12 +51,13 @@ body{
 div.fluid_container{
     display: flex;
     justify-content: center;
-    background-color:whitesmoke;
+    background-color:#d2d2d2;
 }
 .display-4{
     display: flex;
     justify-content: center;
-    font-weight: 999
+    font-weight: 999;
+    color: #DB4437;
 }
 p{
     display: flex;
@@ -64,18 +74,18 @@ p{
 }
 .jumbotron{
     font-family: Segoe Script !important;
-    background-color:whitesmoke;
+    background-color:#d2d2d2;
     color: black;
     justify-content: center;
 }
 .navbar-nav .nav-link{
-    color: black !important;
+    color: #4285F4 !important;
 }
 svg{
-    color: #fe2712!important;
+    color: #F4B400!important;
 }
 i{
-    color: #fe2712 !important;
+    color: #F4B400!important;
 }
 .container{
     display:flex;
@@ -116,4 +126,12 @@ table{
     font-family: Segoe Script !important;
     font-size: xx-large;
 
+}
+thead{
+    background-color:#4285F4 !important ;
+    color: #F4B400;
+}
+.btn-success{
+    background-color: #0F9D58 !important;
+    font-size: xx-large;
 }

@@ -82,3 +82,7 @@ def addpup(request):
         'all_dogs' : all_dogs
     }
     return redirect('/adminpage')
+def contactpage(request):
+    return render(request,'contactus.html')
+def gallery(request):
+    return render(request,'gallery.html')
