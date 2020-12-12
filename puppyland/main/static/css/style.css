@@ -84,6 +84,7 @@ i{
 #para{
     display:flex;
     justify-content: center;
+    
 }
 .footer{
     display:flex;
@@ -107,4 +108,12 @@ form{
 .dog-form{
     display: flex;
     justify-content: center;
+}
+#paradiv{
+    justify-content: center;
+}
+table{
+    font-family: Segoe Script !important;
+    font-size: xx-large;
+
 }

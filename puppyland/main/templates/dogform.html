@@ -62,31 +62,45 @@
                 </div>
             </div>
         </nav>
+        
+
         <div class="dog-form">
-            <form>
+            <form action="/addpup" method="POST">
+                {% csrf_token %}
                 <div class="form-group">
                     <label for="exampleInputEmail1">Name</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1">
+                    <input type="text" class="form-control" id="dog_name" name="dog_name">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Breed</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1">
+                    <input type="text" class="form-control" id="dog_breed" name="dog_breed">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Gender</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1">
+                    <input type="text" class="form-control" id="dog_gender"name="dog_gender">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Weight</label>
-                    <input type="number" class="form-control" id="exampleInputPassword1">
+                    <input type="number" class="form-control" id="dog_weight"name="dog_weight">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Age</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1">
+                    <input type="text" class="form-control" id="dog_age" name="dog_age">
                 </div>
 
                 <button type="submit" class="btn btn-primary">Submit</button>
+                {% if messages %}
+        <ul class="messages">
+                {% for message in messages %}
+            <div class="alert alert-danger" role="alert">
+                <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+              </div>
+                    
+                {% endfor %}
+        </ul>
+        {% endif %}
         </div>
+        {% csrf_token %}
         </form>
         <footer class="footer"> <a href="tel:2060000000">206-000-0000</a>|Seattle, Washington|<a href="/admin">Admin</a>
         </footer>

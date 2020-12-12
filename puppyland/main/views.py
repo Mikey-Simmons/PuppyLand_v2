@@ -8,7 +8,10 @@ def index(request):
 def aboutus(request):
     return render(request,'aboutus.html')
 def puppies(request):
-    return render(request,'puppies.html')
+    context = {
+        'all_dogs': Dog.objects.all()
+    }
+    return render(request,'puppies.html',context)
 def admin(request):
     return render(request,'admin.html')
 def register(request):
@@ -59,3 +62,23 @@ def adddog(request):
         'all_dogs': Dog.objects.all()
     }
     return render(request,'dogform.html',context)
+def addpup(request):
+    errors = Dog.objects.dog_validator(request.POST)
+    if len(errors)>0:
+        for key, value in errors.items():
+            messages.error(request,value)
+        return redirect('/adddog')
+    logged_in_user = User.objects.get(id=request.session['user_id'])
+    all_dogs = Dog.objects.all()
+    new_dog = Dog.objects.create(
+        dog_name = request.POST['dog_name'],
+        dog_breed = request.POST['dog_breed'],
+        dog_gender = request.POST['dog_gender'],
+        dog_weight= request.POST['dog_weight'],
+        dog_age= request.POST['dog_age']
+    )
+    context = {
+        'logged_in_user': logged_in_user,
+        'all_dogs' : all_dogs
+    }
+    return redirect('/adminpage')
