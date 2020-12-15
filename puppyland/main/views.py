@@ -88,3 +88,5 @@ def contactpage(request):
     return render(request,'contactus.html')
 def gallery(request):
     return render(request,'gallery.html')
+def adoptpage(request):
+    return render(request,'adoptform.html')

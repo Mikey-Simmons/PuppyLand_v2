@@ -111,14 +111,8 @@ i{
     display: flex;
     justify-content: center !important;
 }
-form{
-    width: 500px !important;
-    justify-content: center;
-}
-.dog-form{
-    display: flex;
-    justify-content: center;
-}
+
+
 #paradiv{
     justify-content: center;
 }
@@ -135,3 +129,4 @@ thead{
     background-color: #0F9D58 !important;
     font-size: xx-large;
 }
+
