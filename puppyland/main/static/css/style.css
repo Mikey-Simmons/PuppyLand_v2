@@ -10,7 +10,9 @@ a.navbar-brand{
     
 }
   
-
+ul.list-group{
+    font-size: xx-large;
+}
 a.navlink{
     font-family: Segoe UI Historic  !important; 
     color: blue !important
@@ -97,7 +99,7 @@ i{
     font-size: 40px;
     
     font-family: Segoe UI;
-    color:#4285F4 ;
+    
 
 }
 .footer{
