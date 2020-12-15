@@ -1,11 +1,12 @@
 from django.db import models
 import re 
 
+
 class DogManager(models.Manager):
     def dog_validator(self,postData):
         errors = {}
         if len(postData['dog_name']) < 1:
-            errors['customer_name'] = "Name must be more than 1 characters!"
+            errors['dog_name'] = "Name must be more than 1 characters!"
         if len(postData['dog_breed']) < 2:
             errors['dog_breed'] = "Description must be more than 2 characters!"
         if len(postData['dog_gender']) < 1:
@@ -17,9 +18,12 @@ class Dog(models.Model):
     dog_gender = models.CharField(default = 000, max_length = 20)
     dog_weight = models.IntegerField()
     dog_age=models.CharField(default=0, max_length=200)
+    img = models.FileField(default=None,null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     objects= DogManager()
+    def __str__(self):
+        return self.dog_name + ": " + str(self.img)
 class UserManager(models.Manager):
     def basic_validator(self,postData):
         errors = {}

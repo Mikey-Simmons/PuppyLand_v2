@@ -23,6 +23,12 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
         </script>
     <link rel="stylesheet" href="static/css/style.css">
+    <style>
+      img{
+        height: 200px;
+        width: 200px;
+      }
+    </style>
 </head>
 
 <body>
@@ -65,21 +71,28 @@
             
             <thead class="thead">
               <tr>
+                <th scope="col">Puppy</th>
                 <th scope="col">Name</th>
                 <th scope="col">Gender</th>
                 <th scope="col">Breed</th>
                 <th scope="col">Weight</th>
                 <th scope="col">Age</th>
+                
               </tr>
             </thead>
             <tbody>
               <tr>
-                {%for dog in all_dogs%}
+                {%for dog in all_dogs reversed%}
+                <td>
+                  <img class="fluid-img"  src="{{MEDIA_URL}}{{dog.img}}" alt="">
+                </td>
                 <th scope="row">{{dog.dog_name}}</th>
                 <td>{{dog.dog_gender}}</td>
                 <td>{{dog.dog_breed}}</td>
                 <td>{{dog.dog_weight}} lbs.</td>
                 <td>{{dog.dog_age}}</td>
+                
+
               </tr>
               
             </tbody>
