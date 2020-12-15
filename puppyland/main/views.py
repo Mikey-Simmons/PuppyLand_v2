@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse, redirect
-from .models import Dog, User
+from .models import Dog, User, Customer
 from django.contrib import messages
 import bcrypt
 from .forms import ImageForm
@@ -83,10 +83,24 @@ def addpup(request):
         'logged_in_user': logged_in_user,
         'form': form,
     }
-    return redirect('/adminpage')
+    return redirect('/adminpage',context)
 def contactpage(request):
     return render(request,'contactus.html')
 def gallery(request):
     return render(request,'gallery.html')
 def adoptpage(request):
     return render(request,'adoptform.html')
+def submit_app(request):
+    new_app= Customer.objects.create(
+        first_name=request.POST['first_name'],
+        last_name=request.POST['last_name'],
+        email=request.POST['email'],
+        phone=request.POST['phone'],
+        dogs_owned=request.POST['dogs_owned'],
+        description=request.POST['description'],
+        reason_why=request.POST['reason_why'],
+        occupataion=request.POST['occupataion']
+    )
+    return redirect('/success')
+def success(request):
+    return render(request,'success.html')

@@ -13,5 +13,7 @@ urlpatterns = [
     path('addpup',views.addpup),
     path('contactus',views.contactpage),
     path('gallery',views.gallery),
-    path('adopt',views.adoptpage)
+    path('adopt',views.adoptpage),
+    path('submitted',views.submit_app),
+    path('success',views.success)
 ]
