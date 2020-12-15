@@ -130,3 +130,9 @@ thead{
     font-size: xx-large;
 }
 
+input#description{
+    height: 100px;
+}
+input#reason_why{
+    height: 100px;
+}
