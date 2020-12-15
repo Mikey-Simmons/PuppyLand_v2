@@ -6,5 +6,5 @@ class DogAdmin(admin.ModelAdmin):
     'img' )
 admin.site.register(Dog, DogAdmin)
 class CustomerAdmin(admin.ModelAdmin):
-    list_display=('first_name','last_name','email','phone','dogs_owned','description','reason_why','occupataion')
+    list_display=('first_name','last_name','dog','email','phone','dogs_owned','description','reason_why','occupataion')
 admin.site.register(Customer,CustomerAdmin)

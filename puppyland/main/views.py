@@ -89,11 +89,15 @@ def contactpage(request):
 def gallery(request):
     return render(request,'gallery.html')
 def adoptpage(request):
-    return render(request,'adoptform.html')
+    context= {
+        'all_dogs':Dog.objects.all()
+    }
+    return render(request,'adoptform.html',context)
 def submit_app(request):
     new_app= Customer.objects.create(
         first_name=request.POST['first_name'],
         last_name=request.POST['last_name'],
+        dog=request.POST['dog'],
         email=request.POST['email'],
         phone=request.POST['phone'],
         dogs_owned=request.POST['dogs_owned'],
@@ -104,3 +108,11 @@ def submit_app(request):
     return redirect('/success')
 def success(request):
     return render(request,'success.html')
+def viewdog(request,num):
+    pup= Dog.objects.get(id=num)
+    form= ImageForm(request.POST or None, request.FILES or None)
+    context={
+        'form': form,
+        'pup': pup
+    }
+    return render(request,'dog.html',context)

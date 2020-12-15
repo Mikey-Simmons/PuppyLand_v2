@@ -15,5 +15,6 @@ urlpatterns = [
     path('gallery',views.gallery),
     path('adopt',views.adoptpage),
     path('submitted',views.submit_app),
-    path('success',views.success)
+    path('success',views.success),
+    path('dog<int:num>',views.viewdog)
 ]

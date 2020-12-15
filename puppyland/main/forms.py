@@ -7,5 +7,6 @@ class ImageForm(forms.Form):
     dog_gender = forms.CharField(max_length = 20)
     dog_weight = forms.IntegerField()
     dog_age= forms.CharField(max_length=200)
+    dog_price = forms.IntegerField()
     img = forms.FileField()
     

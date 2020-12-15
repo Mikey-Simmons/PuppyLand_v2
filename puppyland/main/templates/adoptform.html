@@ -61,7 +61,7 @@
             <h1 class="display-4">Adopt a Puppy!</h1>
             <p class="lead">Please fill out the form below if you are seriously interested in adopting a puppy!</p>
             <div class="container">
-                <form action="/submitted" method=POST>
+                <form name="application" id="application" action="/submitted" method=POST>
                     {% csrf_token %}
                     <div class="form-group">
                         <label for="first">First Name</label>
@@ -70,6 +70,16 @@
                     <div class="form-group">
                         <label for="last">Last Name</label>
                         <input type="text" class="form-control" name="last_name" id="last" placeholder="Enter Last Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="dog">Which Puppy would you like to adopt?</label>
+                        <select form="application" name="dog" id="dog">
+                            {%for dog in all_dogs%}
+                            <option value="{{dog.dog_name}}" > {{dog.dog_name}} </option>
+                            {% endfor %}
+                            <option value="Not Sure"> Not sure yet </option>
+                        </select>
+                    
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>

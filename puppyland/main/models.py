@@ -18,6 +18,7 @@ class Dog(models.Model):
     dog_gender = models.CharField(default = 000, max_length = 20)
     dog_weight = models.IntegerField()
     dog_age=models.CharField(default=0, max_length=200)
+    dog_price=models.IntegerField(default=3000)
     img = models.FileField(default=None,null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -60,6 +61,7 @@ class User(models.Model):
 class Customer(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
+    dog= models.CharField(max_length=50, )
     email = models.CharField(max_length=255)
     phone= models.CharField(max_length=20)
     dogs_owned=models.IntegerField()
