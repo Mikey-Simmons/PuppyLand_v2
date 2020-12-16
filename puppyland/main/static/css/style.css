@@ -97,7 +97,7 @@ i{
     display:flex;
     justify-content: center;
     font-size: 40px;
-    
+    background-color: white;
     font-family: 'Sofia', cursive;
     
 
@@ -125,6 +125,7 @@ i{
 table{
     font-family: 'Sofia', cursive !important;
     font-size: xx-large;
+    background-color: white;
 
 }
 thead{
