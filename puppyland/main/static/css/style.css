@@ -1,5 +1,5 @@
 a.navbar-brand{
-    font-family: 'Sofia', cursive !important;
+    font-family: 'Cutive', serif !important;
     font-size: 100px;
     display: flex;
     justify-content: center;
@@ -14,7 +14,7 @@ ul.list-group{
     font-size: xx-large;
 }
 a.navlink{
-    font-family: Segoe UI Historic  !important; 
+    font-family: 'Cutive', serif !important;
     color: blue !important
 }
 a:hover{
@@ -26,7 +26,7 @@ nav{
     display: flex;
 }
 .nav-link{
-    font-family: 'Sofia', cursive !important  ;
+    font-family: 'Cutive', serif !important;
     font-size: xxx-large;
     display: block;
     font-weight: 999;
@@ -75,7 +75,7 @@ p{
     justify-content: center;
 }
 .jumbotron{
-    font-family: 'Sofia', cursive !important;
+    font-family: 'Cutive', serif !important;
     background-color:#d2d2d2;
     color: black;
     justify-content: center;
@@ -98,7 +98,7 @@ i{
     justify-content: center;
     font-size: 40px;
     background-color: white;
-    font-family: 'Sofia', cursive;
+    font-family: 'Cutive', serif !important;
     
 
 }
@@ -106,7 +106,7 @@ i{
     display:flex;
     justify-content: center;
     font-size: x-large;
-    font-family:'Sofia', cursive  !important;
+    font-family: 'Cutive', serif !important;
 }
 .btn-group-lg>.btn, .btn-lg{
     width: 100px;
@@ -123,7 +123,7 @@ i{
     justify-content: center;
 }
 table{
-    font-family: 'Sofia', cursive !important;
+    font-family: 'Cutive', serif !important;;
     font-size: xx-large;
     background-color: white;
 
