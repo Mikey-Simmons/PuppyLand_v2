@@ -1,8 +1,7 @@
 a.navbar-brand{
     font-family: 'Cutive', serif !important;
     font-size: 100px;
-    display: flex;
-    justify-content: center;
+    
     color: #DB4437!important;
     font-weight: 999;
     
@@ -22,63 +21,69 @@ a:hover{
     
 }
 nav{
-    justify-content: center;
-    display: flex;
+    
 }
 .nav-link{
     font-family: 'Cutive', serif !important;
-    font-size: xxx-large;
+    font-size: 40px;
     display: block;
     font-weight: 999;
     color: blue !important;
 }
 body{
-    background-color: #d2d2d2;
+    background-color: #ffffff;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 .navbar{
     display: block;
     color: blue !important;
-    background-color: #d2d2d2 !important;
+    background-color: #ffffff !important;
+
 }
 .navbar .navbar-nav {
     float: none;
-    background-color:#d2d2d2!important
+    justify-content: left;
+    background-color: #ffffff !important;
+    
     
   }
   
   .navbar .navbar-collapse {
     text-align: center;
-    justify-content: center;
+   
   }
 div.fluid_container{
     display: flex;
-    justify-content: center;
-    background-color:#d2d2d2;
+    justify-content: left;
+    background-color: #ffffff;
+    padding: 50px
+  
 }
 .display-4{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     font-weight: 999;
     color: #DB4437;
 }
 p{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     font-size: xxx-large;
    
 }
 .btn-primary{
     display: block;
-    justify-content: center;
+    justify-content: left;
 }
 .carousel-inner{
     justify-content: center;
 }
 .jumbotron{
     font-family: 'Cutive', serif !important;
-    background-color:#d2d2d2;
+    background-color: #ffffff;
     color: black;
-    justify-content: center;
+    justify-content: left;
 }
 .navbar-nav .nav-link{
     color: #4285F4 !important;
@@ -145,4 +150,8 @@ input#reason_why{
 }
 form#application{
     font-size: xx-large;
+}
+#pic{
+    justify-content: left;
+    display: flex;
 }
