@@ -96,11 +96,11 @@ i{
 }
 .container{
     display:flex;
-    justify-content: center;
+    justify-content: left;
 }
 #para{
     display:flex;
-    justify-content: center;
+    justify-content: left;
     font-size: 40px;
     background-color: white;
     font-family: 'Cutive', serif !important;
@@ -152,6 +152,10 @@ form#application{
     font-size: xx-large;
 }
 #pic{
+    justify-content: left;
+    display: flex;
+}
+#fluid-container{
     justify-content: left;
     display: flex;
 }
